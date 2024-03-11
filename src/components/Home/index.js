@@ -206,11 +206,13 @@ class Home extends Component {
             <div className="cart-container">
               <p className="header-txt">My Orders</p>
               <Link to="/cart" className="cart">
-                <img
-                  src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png"
-                  alt="nav cart"
-                  className="nav-bar-img"
-                />
+                <button type="button" data-testid="cart">
+                  <img
+                    src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png"
+                    alt="nav cart"
+                    className="nav-bar-img"
+                  />
+                </button>
               </Link>
               {/* <AiOutlineShoppingCart className="cart" /> */}
               <p className="cart-text">{cartItemsCount}</p>
