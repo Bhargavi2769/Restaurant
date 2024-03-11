@@ -40,13 +40,14 @@ const Header = props => {
             <p className="nav-link">My Orders</p>
             <li className="nav-menu-item">
               <Link to="/cart" className="nav-link">
-    <button type="button" data-testid="cart">
-                <img
-                  src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png"
-                  alt="nav cart"
-                  className="nav-bar-img"
-                />
-                    </button>
+                <button type="button" data-testid="cart">
+                  <img
+                    src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png"
+                    alt="nav cart"
+                    className="nav-bar-img"
+                  />
+                </button>
+
                 {renderCartItemsCount()}
               </Link>
             </li>
@@ -69,11 +70,14 @@ const Header = props => {
           </li>
           <li className="nav-menu-item-mobile">
             <Link to="/cart" className="nav-link">
-              <img
-                src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png"
-                alt="nav cart"
-                className="nav-bar-img"
-              />
+              <button type="button" data-testid="cart">
+                <img
+                  src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png"
+                  alt="nav cart"
+                  className="nav-bar-img"
+                />
+              </button>
+
               {renderCartItemsCount()}
             </Link>
           </li>
